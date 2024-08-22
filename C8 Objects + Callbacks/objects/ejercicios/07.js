@@ -7,6 +7,8 @@ function sort(sortBy, list) {
    // recibes --> ("a", [{ a: 1, b: 3 }, { a: 3, b: 2 }, { a: 2, b: 40 }])
    // retorna --> [{ a: 3, b: 2 }, { a: 2, b: 40 }, { a: 1, b: 3 }]
    // Tu código:
+   return list.sort((a, b) => b[sortBy] - a[sortBy]);
+   //  To memorize this, remember that (a, b) => a - b sorts numbers in ascending order.
 }
 
 module.exports = sort;
